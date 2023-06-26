@@ -2711,6 +2711,17 @@ select:focus::-webkit-input-placeholder {
     padding: 0 2.8125rem;
 }
 
+@media (max-width:768px) {
+
+    .vlt-btn,
+    .vlt-btn--md {
+        height: 2.8125rem;
+        padding: 0 0.8125rem;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+}
+
 /* WIDGET: CONTACT FORM
 -------------------------------------------- */
 .vlt-contact-form .message {
