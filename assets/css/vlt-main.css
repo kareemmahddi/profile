@@ -300,7 +300,7 @@
 /* ANCHOR: COLORS
 -------------------------------------------- */
 .has-accent-color {
-    color: #cf000f;
+    color: var(--mainColor);
 }
 
 .has-white-color {
@@ -322,7 +322,7 @@
 }
 
 .message.danger {
-    color: #cf000f;
+    color: red;
 }
 
 /* GAPS
@@ -809,17 +809,17 @@
 -------------------------------------------- */
 ::-moz-selection {
     color: #fff;
-    background-color: #cf000f;
+    background-color: var(--mainColor);
 }
 
 ::selection {
     color: #fff;
-    background-color: #cf000f;
+    background-color: var(--mainColor);
 }
 
 ::-moz-selection {
     color: #fff;
-    background-color: #cf000f;
+    background-color: var(--mainColor);
 }
 
 /* BODY
@@ -890,7 +890,7 @@ a:active {
 }
 
 a:hover {
-    color: #cf000f;
+    color: var(--mainColor);
 }
 
 /* HEADINGS
@@ -1502,6 +1502,9 @@ select:focus::-webkit-input-placeholder {
 
     letter-spacing: .02em;
     text-transform: uppercase;
+    border: 1px solid #ffffff;
+    padding: 7px 15px;
+    border-radius: 10px;
 }
 
 .vlt-default-menu__navigation .sf-menu>li+li {
@@ -1510,7 +1513,9 @@ select:focus::-webkit-input-placeholder {
 
 .vlt-default-menu__navigation .sf-menu>li.active>a,
 .vlt-default-menu__navigation .sf-menu>li:hover>a {
-    color: #cf000f;
+    color: var(--mainColor);
+    border-color: var(--mainColor);
+
 }
 
 /* HEADER: OFFCANVAS
@@ -1643,7 +1648,7 @@ select:focus::-webkit-input-placeholder {
 
 .vlt-offcanvas-menu__navigation .sf-menu>li.active>a,
 .vlt-offcanvas-menu__navigation .sf-menu>li:hover>a {
-    color: #cf000f;
+    color: var(--mainColor);
 }
 
 .vlt-offcanvas-menu__footer {
@@ -1891,9 +1896,9 @@ select:focus::-webkit-input-placeholder {
 }
 
 .vlt-comment-item__inner .vlt-comment-reply:hover {
-    background-color: #cf000f;
-    -webkit-box-shadow: inset 0 0 0 1px #cf000f;
-    box-shadow: inset 0 0 0 1px #cf000f;
+    background-color: var(--mainColor);
+    -webkit-box-shadow: inset 0 0 0 1px var(--mainColor);
+    box-shadow: inset 0 0 0 1px var(--mainColor);
 }
 
 /* 04. Pages */
@@ -2268,6 +2273,10 @@ select:focus::-webkit-input-placeholder {
 -------------------------------------------- */
 /* PORTFOLIO: PROJECT
 -------------------------------------------- */
+* {
+    --mainColor: #009688;
+}
+
 .vlt-project>* {
     opacity: 0;
 }
@@ -2291,6 +2300,7 @@ select:focus::-webkit-input-placeholder {
     font-size: 7.5rem;
     font-weight: 600;
     line-height: 1.1;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 @media only screen and (max-width: 767px) {
@@ -2365,7 +2375,7 @@ select:focus::-webkit-input-placeholder {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #cf000f;
+    background-color: var(--mainColor);
 }
 
 /* PARTIAL: FIXED SOCIALS
@@ -2450,7 +2460,7 @@ select:focus::-webkit-input-placeholder {
 }
 
 .vlt-language-switcher a.is-active {
-    color: #cf000f;
+    color: var(--mainColor);
 }
 
 .vlt-language-switcher a+a {
@@ -2547,7 +2557,7 @@ select:focus::-webkit-input-placeholder {
 
     opacity: .6;
     border-radius: 50%;
-    background-color: #cf000f;
+    background-color: var(--mainColor);
 }
 
 .double-bounce-two {
@@ -2590,7 +2600,7 @@ select:focus::-webkit-input-placeholder {
 
 .fancybox-loading {
     border: 2px solid rgba(255, 255, 255, .2);
-    border-top-color: #cf000f;
+    border-top-color: var(--mainColor);
 }
 
 /* VENDOR: JARALLAX
@@ -2683,7 +2693,7 @@ select:focus::-webkit-input-placeholder {
     text-transform: uppercase;
 
     color: #fff;
-    background-color: #cf000f;
+    background-color: var(--mainColor);
 }
 
 .vlt-btn--primary:hover {
@@ -3014,7 +3024,7 @@ select:focus::-webkit-input-placeholder {
     transform-origin: top;
 
     border-radius: .3125rem;
-    background-color: #cf000f;
+    background-color: var(--mainColor);
 }
 
 /* WIDGET: PARTNERS
@@ -3121,7 +3131,7 @@ select:focus::-webkit-input-placeholder {
     height: 100%;
 
     border-radius: .4375rem;
-    background-color: #cf000f;
+    background-color: var(--mainColor);
 }
 
 /* WIDGET: PULLQUOTE
@@ -3141,7 +3151,7 @@ select:focus::-webkit-input-placeholder {
 
     height: 2.375rem;
 
-    color: #cf000f;
+    color: var(--mainColor);
 }
 
 .vlt-pullquote__text {
@@ -3234,7 +3244,7 @@ select:focus::-webkit-input-placeholder {
 }
 
 .vlt-slider-controls .vlt-swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #cf000f;
+    background-color: var(--mainColor);
 }
 
 .vlt-slider-controls .vlt-swiper-pagination .swiper-pagination-bullet+.swiper-pagination-bullet {
@@ -3277,9 +3287,9 @@ select:focus::-webkit-input-placeholder {
 
 .vlt-slider-controls--style-1 .vlt-swiper-button-prev:hover,
 .vlt-slider-controls--style-1 .vlt-swiper-button-next:hover {
-    background-color: #cf000f;
-    -webkit-box-shadow: inset 0 0 0 1px #cf000f;
-    box-shadow: inset 0 0 0 1px #cf000f;
+    background-color: var(--mainColor);
+    -webkit-box-shadow: inset 0 0 0 1px var(--mainColor);
+    box-shadow: inset 0 0 0 1px var(--mainColor);
 }
 
 .vlt-slider-controls--style-1 .vlt-swiper-button-prev svg,
